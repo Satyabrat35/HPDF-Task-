@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Author</title>
+</head>
+<body>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>No of Posts</th>
+	</tr>
+	{% for auth in auth_data %}
+	<tr>
+		<td>{{auth["name"]}}</td>
+	</tr>
+	{% endfor %}
+	{% for i in range(0,length(tot)) %}
+	<tr>
+		<td>{{tot[i]}}</td>
+	</tr>
+	{% endfor %}
+</table>
+
+</body>
+</html>
